@@ -1,0 +1,12 @@
+﻿@model List<PostViewModel>;
+
+    <h1>Inside _Post ViewComponent</h1>
+    <ul>
+@foreach (var item in Model)
+{
+        <li>@item.Id</li>
+        <li>@item.Body</li>
+        <li>@item.Author</li>
+        <li>@item.Title</li>
+    }
+</ul>

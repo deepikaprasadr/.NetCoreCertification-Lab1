@@ -1,0 +1,9 @@
+﻿<ul>
+      @* @foreach(var item in Model.stringlist) *@
+        @foreach (var comment in Model)
+    {
+       <li>
+           @comment
+       </li>
+    }
+</ul>

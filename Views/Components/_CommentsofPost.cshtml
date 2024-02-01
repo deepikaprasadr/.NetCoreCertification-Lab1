@@ -1,0 +1,17 @@
+﻿ @model IList<CommentViewModel>
+
+<h4>Comments of each Postid Model </h4>
+
+<div>
+    <h5>The number of comments : @Model.Count</h5>
+</div>
+<ul>
+@foreach(var comment in Model)
+{
+    <li>@comment.PostId</li>
+        <li>@comment.Id</li>
+        <li>@comment.Name</li>
+        <li>@comment.Email</li>
+        <li>@comment.Body</li>
+    }
+</ul>

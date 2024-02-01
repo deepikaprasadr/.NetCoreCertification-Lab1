@@ -1,0 +1,26 @@
+﻿@* @model IList<PostViewModel>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<ul>
+@foreach (var i in Model)
+{
+        <li>@i.Author</li>
+        <li>@i.Body</li>
+        <li>@i.Title</li>        
+        <li>@i.Id</li>
+}
+</ul> *@
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+ 
+
+
+@* @await Component.InvokeAsync("Post", new{id=3}) *@
+
+@* @await Component.InvokeAsync("Post") *@
